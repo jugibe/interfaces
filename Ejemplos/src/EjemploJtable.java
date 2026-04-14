@@ -7,6 +7,8 @@ import javax.swing.JTable;
 import javax.swing.border.EmptyBorder;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class EjemploJtable extends JFrame {
 
@@ -47,16 +49,22 @@ public class EjemploJtable extends JFrame {
 	        // Filas
 	        modelo.addRow(new Object[]{"Carlos", 28});
 	        modelo.addRow(new Object[]{"Laura", 35});
+	        contentPane.setLayout(null);
 
 	        JTable tabla = new JTable(modelo);
 
 	        JScrollPane scrollPane = new JScrollPane(tabla);
+	        scrollPane.setBounds(102, 10, 334, 160);
 	        contentPane.add(scrollPane);
 	        
+	        JButton btnNewButton_1 = new JButton("New button");
+	       
+	        btnNewButton_1.setBounds(8, 26, 84, 20);
+	        contentPane.add(btnNewButton_1);
+	        
 	        JButton btnNewButton = new JButton("New button");
-	        scrollPane.setRowHeaderView(btnNewButton);
+	        
 	        
 
 	}
-
 }

@@ -1,3 +1,40 @@
+# =========================
+# Eclipse IDE
+# =========================
 .metadata/
+.settings/
+.recommenders/
+.project
+.classpath
+
+# =========================
+# Compilados Java
+# =========================
+*.class
+bin/
+target/
+
+# =========================
+# Logs y temporales
+# =========================
 *.log
 *.tmp
+
+# =========================
+# Maven / Gradle (si usas)
+# =========================
+target/
+.gradle/
+build/
+
+# =========================
+# Sistema operativo
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Eclipse WebView / SWT (IMPORTANTE en tu error)
+# =========================
+.metadata/.plugins/org.eclipse.swt/
+.metadata/.plugins/org.eclipse.buildship.core/
